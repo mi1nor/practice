@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block header %}
+<ul>
+    <li>
+        <form action="/shop/" method="GET">
+            <button type="submit">Home</button>
+        </form>
+    </li>
+    <li>
+        <form action="/accounts/logout/" method="POST">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+    </li>
+</ul>
+{% endblock %}
+
+{% block main %}
+
+<h1>Hello - {{ request.user }}</h1>
+<p>First name: {{ request.user.first_name }}</p>
+<p>Last name: {{ request.user.last_name }}</p>
+<p>Email: {{ request.user.email }}</p>
+
+{% endblock %}

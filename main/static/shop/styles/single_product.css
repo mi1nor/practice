@@ -1,0 +1,60 @@
+body {
+    font-family: "Cormorant", serif;
+}
+
+.btn-warning, .btn-danger  {
+    transition: transform 0.3s ease;
+}
+
+.btn-warning:hover {
+    outline: none;
+    box-shadow: 0 0 8px #ffc107;
+    transform: scale(1.2);
+}
+
+.btn-danger:hover {
+    outline: none;
+    box-shadow: 0 0 8px #dc3545;
+    transform: scale(1.2);
+
+    background: linear-gradient(123deg, #519336, #ebc200, #00ebaa, #6800eb, #eb0041);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    -o-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 69%}
+    50%{background-position:100% 32%}
+    100%{background-position:0% 69%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 69%}
+    50%{background-position:100% 32%}
+    100%{background-position:0% 69%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 69%}
+    50%{background-position:100% 32%}
+    100%{background-position:0% 69%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 69%}
+    50%{background-position:100% 32%}
+    100%{background-position:0% 69%}
+}
+
+@keyframes textAnimation {
+    0% {
+      font-size: 16px; /* начальный размер шрифта */
+    }
+    50% {
+      font-size: 20px; /* максимальный размер шрифта */
+    }
+    100% {
+      font-size: 16px; /* возврат к начальному размеру шрифта */
+    }
+  }

@@ -1,0 +1,56 @@
+{% load static %}
+
+<div class="container">
+    <div class="footer__inner">
+        <ul class="footer__products">
+            <li class="footer__products-title">Товары</li>
+            <li class="footer_products-item"><a href="#" class="footer_products-link"></a>Черный чай</li>
+            <li class="footer_products-item"><a href="#" class="footer_products-link"></a>Зеленый чай</li>
+            <li class="footer_products-item"><a href="#" class="footer_products-link"></a>Белый чай</li>
+            <li class="footer_products-item"><a href="#" class="footer_products-link"></a>Улун чай</li>
+            <li class="footer_products-item"><a href="#" class="footer_products-link"></a>Пуэр чай</li>
+        </ul>
+        <ul class="footer__company">
+            <li class="footer__company-title">Компания</li>
+            <li class="footer__company-item"><a href="#" class="footer__company-link"></a>О нас</li>
+            <li class="footer__company-item"><a href="#" class="footer__company-link"></a>Связаться с нами</li>
+            <li class="footer__company-item"><a href="#" class="footer__company-link"></a>Наш блог</li>
+            <li class="footer__company-item"><a href="#" class="footer__company-link"></a>Часто задаваемые вопросы</li>
+            <li class="footer__company-item"><a href="#" class="footer__company-link"></a>Отправка & Доставка</li>
+            <li class="footer__company-item"><a href="#" class="footer__company-link"></a>Политика возврата</li>
+            <li class="footer__company-item"><a href="#" class="footer__company-link"></a>Условия использования</li>
+        </ul>
+        <blockquote class="footer__blockquote">
+            <p class="footer__blockquote-text">“Чай – это путешествие. Это может перенести вас в новые места и открыть ваш разум для новых впечатлений. Пусть каждый глоток перенесет вас в мир чудес и возможностей.”</p>
+            <cite class="footer__blockquote-author">Драгомир Теодореску,<br> Владелец Теалюкса</cite>
+        </blockquote>
+        <div class="footer__contacts">
+            <h5 class="footer__contacts-title first">Оставайтесь на связи</h5>
+            <p class="footer__contacts-text">Пожалуйста, не стесняйтесь обращаться к нам по электронной почте или телефону. Мы будем рады услышать ваше мнение!</p>
+            <ul class="footer__nav">
+                <li class="footer__nav-logo"><a href="#" class="footer__nav-logo"><img src="{% static 'shop/images/logo.svg' %}" alt=""></a></li>
+                <li class="footer__nav-contacts">
+                    <a href="tel:+951 680 12 46" class="footer__nav-phone" style="--phone-image-url: url('{% static 'shop/images/phone.svg' %}')">+7-951-680-12-46</a>
+                    <a href="mailto:info@tealuxe.com" class="footer__nav-email" style="--mail-image-url: url('{% static 'shop/images/mail.svg' %}')">info@tealuxe.com</a>
+                </li>
+                <li class="footer__social">
+                    <ul class="footer__social-list">
+                        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="{% static 'shop/images/soc-1.svg' %}" alt=""></a></li>
+                        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="{% static 'shop/images/soc-2.svg' %}" alt=""></a></li>
+                        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="{% static 'shop/images/soc-3.svg' %}" alt=""></a></li>
+                        <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="{% static 'shop/images/soc-4.svg' %}" alt=""></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p class="footer__copy">© Tealuxe, 2023</p>
+        <ul class="partners-logo">
+            <li class="partners-logo__item"><img src="{% static 'shop/images/par-1.svg' %}" alt=""></li>
+            <li class="partners-logo__item"><img src="{% static 'shop/images/par-2.svg' %}" alt=""></li>
+            <li class="partners-logo__item"><img src="{% static 'shop/images/par-3.svg' %}" alt=""></li>
+            <li class="partners-logo__item"><img src="{% static 'shop/images/par-4.svg' %}" alt=""></li>
+        </ul>
+    </div>
+</div>

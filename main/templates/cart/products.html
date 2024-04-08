@@ -1,0 +1,56 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block links %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'shop/styles/style.css' %}"/>
+<link rel="stylesheet" href="{% static 'shop/styles/products.css' %}"/>
+{% endblock %}
+
+{% block header %}
+{% include 'shop/main-components/header.html' %}
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+
+    <div class="row">
+        <div class="text-center p-5 mb-5">
+            <h1>Товары</h1>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+
+        {% if not products %}
+        <p class="text-center">Извините, но в данный момент нет доступных товаров :(</p>
+        {% endif %}
+
+        {% for product in products  %}
+        
+        <div class="col my-2 mb-4">
+            <a href="{% url 'shop:single_product' product.pk %}">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="{{ product.url_image }}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ product.title }}</h5>
+                        <p class="card-text">{{ product.price }} ₽</p>
+                        <a href="{% url 'shop:add_to_cart' product.id %}" class="btn btn-dark mt-3 btn-add-to-cart" onclick="handleAddToCart(event)">Добавить в корзину</a>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        {% endfor %}
+    </div>
+</div>
+
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script defer src="{% static 'shop/scripts/main.js' %}"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+{% endblock %}

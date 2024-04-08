@@ -1,0 +1,51 @@
+.footer {
+    background-color: white;
+}
+
+.btn-dark {
+    background-color: #212529;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+/* .card:hover {
+    outline: none;
+    box-shadow: 0 0 8px #51CBEE;
+    transform: scale(1.2);
+} */
+
+.card:hover {
+    outline: none;
+    box-shadow: 0 0 8px;
+    transform: scale(1.2);
+    background: linear-gradient(200deg, #cbcb3f, #46b518, #d6c519, #199ed6, #d619a1);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:33% 100%}
+    100%{background-position:68% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:33% 100%}
+    100%{background-position:68% 0%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:33% 100%}
+    100%{background-position:68% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:68% 0%}
+    50%{background-position:33% 100%}
+    100%{background-position:68% 0%}
+}

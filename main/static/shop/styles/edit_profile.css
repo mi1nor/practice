@@ -1,0 +1,29 @@
+hr {
+    width: 67%;
+}
+
+.my-input {
+    width: 90%;
+}
+
+@media (max-width: 600px), (max-width: 580px) {
+    hr {
+        width: 100%;
+    }
+    .my-input {
+        width: 100%;
+    }
+}
+
+/* --- */
+
+label {
+    display: block;
+}
+
+.btn-width {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* --- */

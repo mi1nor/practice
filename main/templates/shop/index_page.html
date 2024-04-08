@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block links %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'shop/styles/style.css' %}"/>
+{% endblock %}
+
+{% block header %}
+{% include 'shop/main-components/header.html' %}
+{% endblock %}
+
+{% block main %}
+{% include 'shop/main-components/main.html' %}
+{% endblock %}
+
+{% block footer %}
+{% include 'shop/main-components/footer.html' %}
+
+<script defer src="{% static 'shop/scripts/main.js' %}"></script>
+{% endblock %}

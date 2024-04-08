@@ -1,0 +1,50 @@
+body {
+    background: #f7f2ea;
+    font-family: "Cormorant", serif;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #f7f2ea;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: #f7f2ea;
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #f7f2ea;
+}
+
+/* #id_username {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    line-height: 1.5;
+} */
+
+#id_username, #id_password {
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius-lg);
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    min-height: calc(1.5em + 1rem + calc(var(--bs-border-width) * 2));
+}
+

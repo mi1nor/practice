@@ -1,0 +1,16 @@
+.my-btn {
+    appearance: none;
+    background-color: transparent;
+    color: var(--bs-breadcrumb-item-active-color);
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+.my-form {
+    display: inline-block;
+}

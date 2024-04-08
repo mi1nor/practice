@@ -1,0 +1,175 @@
+{% load static %}
+
+<section class="top" style="--bg-image-url: url('{% static 'shop/images/bg.jpg' %}')">     
+    <div class="container">
+        <div class="top__inner">
+            <h1 class="top__title">
+                Чашка чая – минутка спокойствия в жизненном хаосе
+            </h1>
+            <p class="top__text">
+                Широкий выбор высококачественного чая со всего мира, тщательно отобранного чайными экспертами.
+            </p>
+        </div>
+    </div>
+</section>
+
+<blockquote class="blockquote">
+<p class="blockquote__text">"Чай – это не просто напиток, это образ жизни и способ общения с близкими."</p>
+</blockquote>
+
+<section class="assortment">
+<div class="container">
+    <h2 class="assortment__title title">Познакомьтесь с нашими коллекциями</h2>
+    <ul class="assortment__list">
+        <li class="assortment__item">
+            <a href="{% url 'shop:view_products' %}">
+                <img src="{% static 'shop/images/black.png' %}" alt="" class="assortment__img">
+                <p class="assortment__name">Черный</p>
+            </a>
+        </li>
+        <li class="assortment__item">
+            <a href="{% url 'shop:view_products' %}">
+                <img src="{% static 'shop/images/green.png' %}" alt="green" class="assortment__img">
+                <p class="assortment__name">Зеленый</p>
+            </a>
+        </li>
+        <li class="assortment__item">
+            <a href="{% url 'shop:view_products' %}">
+                <img src="{% static 'shop/images/white.png' %}" alt="white" class="assortment__img">
+                <p class="assortment__name">Белый</p>
+            </a>
+        </li>
+        <li class="assortment__item">
+            <a href="{% url 'shop:view_products' %}">
+                <img src="{% static 'shop/images/oolong.png' %}" alt="oolong" class="assortment__img">
+                <p class="assortment__name">Улун</p>
+            </a>
+        </li>
+        <li class="assortment__item">
+            <a href="{% url 'shop:view_products' %}">
+                <img src="{% static 'shop/images/pu-erh.png' %}" alt="pu-erh" class="assortment__img">
+                <p class="assortment__name">Пуэр</p>
+            </a>
+        </li>
+    </ul>
+</div>
+</section>
+
+<section class="rewiews">
+<div class="container">
+    <h2 class="title">Что говорят наши Клиенты</h2>
+    <ul class="rewiews__list">
+        <li class="rewiews__item">
+            <blockquote class="fix__mar">
+                <p class="rewiews__text">"Как любитель чая, я пробовал чаи со всего мира, но этот чайный магазин действительно выделяется. Их чаи высочайшего качества и разнообразие впечатляют. Это определенно чайный магазин, который должен посетить каждый любитель чая."</p>
+                <cite class="rewiews__name">Алиса</cite>
+            </blockquote>
+        </li>
+        <li class="rewiews__item">
+            <blockquote class="fix__mar">
+                <p class="rewiews__text">"В этом чайном магазине я всегда могу найти все, что мне нужно. Их выбор непревзойден, а качество чая исключительное."</p>
+                <cite class="rewiews__name">Вин Дизель</cite>
+            </blockquote>
+        </li>
+        <li class="rewiews__item">
+            <blockquote class="fix__mar">
+                <p class="rewiews__text">"Если вы любитель чая, вам обязательно стоит посетить этот чайный магазин. Выбор огромен, а качество превосходное. Я гарантирую, что вы не будете разочарованы."</p>
+                <cite class="rewiews__name">Виктор</cite>
+            </blockquote>
+        </li>
+        <li class="rewiews__item rewiews__item--hide">
+            <blockquote class="fix__mar">
+                <p class="rewiews__text">"Я не большой любитель чая, но этот магазин чая изменил меня. Я очень рекомендую этот чайный магазин всем, кто ищет высококачественный чай."</p>
+                <cite class="rewiews__name">Владимир</cite>
+            </blockquote>
+        </li>
+    </ul>
+</div>
+</section>
+
+<section class="main-blog">
+<div class="container">
+    <h2 class="title ">Наш чайный блог</h2>
+    <ul class="main-blog__list">
+        <li class="main-blog__item">
+            <img src="{% static 'shop/images/blog-1.jpg' %}" alt="" class="main-blog__item-img">
+            <div class="main-blog__item-content">
+                <h3 class="main-blog__item-title">Путешествие во времени за чаем: забавные моменты со всего мира</h3>
+                <a href="" class="main-blog__item-author">от Робинзона Крузо</a>
+                <a href="" class="main-blog__item-link" style="--d-image-url: url('{% static 'shop/images/d.svg' %}')">Читать</a>
+            </div>
+        </li>
+        <li class="main-blog__item">
+            <img src="{% static 'shop/images/blog-2.jpg' %}" alt="" class="main-blog__item-img">
+            <div class="main-blog__item-title">
+                <h3 class="main-blog__item-title">Чайные сказки: веселые истории от любителей чая</h3>
+                <a href="" class="main-blog__item-author">от Каспера</a>
+                <a href="" class="main-blog__item-link" style="--d-image-url: url('{% static 'shop/images/d.svg' %}')">Читать</a>
+            </div>
+        </li>
+        <li class="main-blog__item">
+            <img src="{% static 'shop/images/blog-3.jpg' %}" alt="" class="main-blog__item-img">
+            <div class="main-blog__item-title">
+                <h3 class="main-blog__item-title">Роль чая в психическом здоровье</h3>
+                <a href="" class="main-blog__item-author">от Джокера</a>
+                <a href="" class="main-blog__item-link" style="--d-image-url: url('{% static 'shop/images/d.svg' %}')">Читать</a>
+            </div>
+        </li>
+        <li class="main-blog__item">
+            <img src="{% static 'shop/images/blog-4.jpg' %}" alt="" class="main-blog__item-img">
+            <div class="main-blog__item-title">
+                <h3 class="main-blog__item-title">Чай и кофеин: влияние на мозг и поведение</h3>
+                <a href="" class="main-blog__item-author">от Мэрлина Мэнсона</a>
+                <a href="" class="main-blog__item-link" style="--d-image-url: url('{% static 'shop/images/d.svg' %}')">Читать</a>
+            </div>
+        </li>
+    </ul>
+    <a href="" class="main-blog__link">Просмотреть все</a>
+</div>
+</section>
+
+<section class="mailing-list" style="--tea-image-url: url('{% static 'shop/images/tea 1.png' %}')">
+<div class="container">
+    <h2 class="title mailing-list__title">Хотите знать больше?</h2>
+    <div class="mailing-list__inner">
+        <p class="mailing-list__text">Подпишитесь на нашу рассылку и будьте в курсе последних новостей, рекламных акций и эксклюзивных предложений нашего чайного магазина. Будьте первым, кто узнает о новых поступлениях чая, сезонных блендах и специальных скидках. Не пропустите потрясающие чайные привилегии — зарегистрируйтесь сегодня!</p>
+        <form action="#" class="mailing-list__form">
+            <input class="mailing-list__email" placeholder="name@email.com" type="email">
+            <button class="mailing-list__btn" type="submit">Присоединиться</button>
+            <label class="mailing-list__label">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox-style"></span>
+                <p class="checkbox-text">Мы серьезно относимся к вашей конфиденциальности и обязуемся защищать вашу личную информацию. Подписываясь на нашу рассылку, вы соглашаетесь получать от нас периодические электронные письма о наших продуктах, рекламных акциях и другой информации, связанной с чаем.</p>
+            </label>
+        </form>
+    </div>
+</div>
+</section>
+
+<section class="prioritase">
+<div class="container">
+    <h2 class="title">Мы расставляем приоритеты</h2>
+    <ul class="prioritase__list">
+        <li class="prioritase__item">
+            <h4 class="prioritase__title">Одиночные садовые чаи</h4>
+            <p class="prioritase__text">Полная прозрачность</p>
+            <img src="{% static 'shop/images/pri-1.svg' %}" alt="" class="">
+        </li>
+        <li class="prioritase__item">
+            <h4 class="prioritase__title">Только листовой чай</h4>
+            <p class="prioritase__text">Лучший опыт питья</p>
+            <img src="{% static 'shop/images/pri-2.svg' %}" alt="" class="">
+        </li>
+        <li class="prioritase__item">
+            <h4 class="prioritase__title">Служба поддержки</h4>
+            <p class="prioritase__text">Никаких ботов и автоматических ответов.</p>
+            <img src="{% static 'shop/images/pri-3.svg' %}" alt="" class="">
+        </li>
+        <li class="prioritase__item">
+            <h4 class="prioritase__title">Быстрая доставка</h4>
+            <p class="prioritase__text">Экономия, Удобно, Надежно</p>
+            <img src="{% static 'shop/images/pri-4.svg' %}" alt="" class="">
+        </li>
+    </ul>
+</div>
+</section>

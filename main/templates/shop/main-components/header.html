@@ -1,0 +1,69 @@
+{% load static %}
+
+<div class="container">
+    <div class="header__inner">
+        <a href="{% url 'shop:index-page' %}" class="logo">
+            <img src="{% static 'shop/images/logo.svg' %}" alt="TealuxE">
+        </a>
+        <nav class="menu">
+            <button class="menu__btn">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="menu__list">
+                <li class="menu__close">
+                    <button class="menu__close-btn">
+                        <img src="{% static 'shop/images/close.svg' %}" alt="close">
+                    </button>
+                </li>
+                <li class="menu__item"><a href="{% url 'shop:view_products' %}" class="menu__link">Черный</a></li>
+                <li class="menu__item"><a href="{% url 'shop:view_products' %}" class="menu__link">Зеленый</a></li>
+                <li class="menu__item"><a href="{% url 'shop:view_products' %}" class="menu__link">Белый</a></li>
+                <li class="menu__item"><a href="{% url 'shop:view_products' %}" class="menu__link">Улун</a></li>
+                <li class="menu__item"><a href="{% url 'shop:view_products' %}" class="menu__link">Пуэр</a></li>
+                <li class="mobile-nav">
+                    <ul class="mobile-menu">
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">
+                            Свяжитесь с нами
+                        </a></li>
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">
+                            Наш блог
+                        </a></li>
+                        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">
+                            Отправка и доставка
+                        </a></li>
+                    </ul>
+                    <ul class="mobile-actions"></ul>
+                    <ul class="mobile-actions">
+                        <li class="user-actions__item">
+                             <a href="{% url 'shop:view_cart' %}" class="mobile-actions__link"><img src="{% static 'shop/images/cart.svg' %}" alt=""></a>       
+                        </li>
+                        <li class="mobile-actions__item">
+                            <a href="{% url 'shop:profile-page' %}" class="mobile-actions__link"><img src="{% static 'shop/images/user.svg' %}" alt=""></a>    
+                        </li>
+                        <li class="mobile-actions__item">
+                            <a href="#" class="mobile-actions__item-search">
+                                <img src="{% static 'shop/images/search.svg' %}" alt="search">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <ul class="user-actions">
+            <li class="user-actions__item">
+                 <a href="{% url 'shop:view_cart' %}" class="user-actions__link"><img src="{% static 'shop/images/cart.svg' %}" alt=""></a>       
+            </li>
+            <li class="user-actions__item">
+                <a href="{% url 'shop:profile-page' %}" class="user-actions__link"><img src="{% static 'shop/images/user.svg' %}" alt=""></a>    
+            </li>
+            <li class="user-actions__item user-actions__item-search">
+                <a href="#" class="user-actions__item-search">
+                    <img src="{% static 'shop/images/search.svg' %}" alt="search">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
